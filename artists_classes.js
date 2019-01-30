@@ -1,10 +1,10 @@
 class Artist {
 	constructor() {
 		this.genre = ''
-        this.sayTagline = function() {
-        	console.log(this.tagline)
-		}
-    }
+	}
+	sayTagline() {
+		console.log(this.tagline)
+	}	
 }
 
 const KidCudi = new Artist()
