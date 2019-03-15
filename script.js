@@ -44,12 +44,23 @@ class CatClass {
     this.paws = 4;
     this.colour = "orange";
   }
+
+  meow() {
+    console.log('meow!')
+  }
 }
 
 //Function constructor
 function CatFC() {
   this.paws = 4;
   this.colour = "orange";
+  // this.meow = () => {
+  //   console.log('meow!')
+  // }
+}
+
+CatFC.prototype.meow = function () {
+  console.log('meow!')
 }
 
 const garfield = new CatClass();

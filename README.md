@@ -40,19 +40,16 @@ By exploring the inner workings of Javascript objects and function constructors 
 `.prototype` --> WHEN I USE THIS TO CREATE NEW THINGS, WHAT DO THEY HAVE
 `.__proto__` --> WHAT AM I INHERITING FROM
 
-We also saw that we can augment existing Javascript types, such as Function and Number. The example below is from "Javascript: The Good Parts" by Douglas Crockford.
+We also saw that we can augment existing Javascript types, such as Array, Function and Number.
 
 ```js
-Function.prototype.method = function(name, func) {
-	this.prototype[name] = func
-	return this
+Array.prototype.sayNimaIsCaredFor = function () {
+	return "I care"
 }
 
-Number.method('integer', function() {
-	return Math[this < 0 ? 'ceil' : 'floor'](this)
-})
+let dogs = ['spot', 'barktholomew', 'lassie']
 
-(5.3).integer() // -> 5
+console.log(dogs.sayNimaIsCaredFor())
 ```
 
 Cheers!
