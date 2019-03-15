@@ -1,4 +1,6 @@
-[GIST WITH THE CODE](https://gist.github.com/NimaBoscarino/2b44f74988b9a1ecc83bfcc1c807b123)
+## W6D5: Prototypes in Javascript
+
+[REPO](https://github.com/NimaBoscarino/prototypes-js-notes)
 
 # How can objects be created in Javascript? We looked at...
 
