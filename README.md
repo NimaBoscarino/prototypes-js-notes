@@ -54,5 +54,13 @@ let dogs = ['spot', 'barktholomew', 'lassie']
 console.log(dogs.sayNimaIsCaredFor())
 ```
 
+```js
+Number.prototype.addOne = function () {
+	return this + 1
+}
+
+(1).addOne()
+```
+
 Cheers!
 
